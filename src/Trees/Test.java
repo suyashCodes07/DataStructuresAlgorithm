@@ -18,6 +18,11 @@ public class Test {
 
         // ---------- HEIGHT ----------
         System.out.println("Height of tree : " + tree.height());
+
+        // ---------- MATH OPERATIONS ----------
+        printSum(tree);
+        printProduct(tree);
+        printSize(tree);
     }
 
     private static void insertNodes(BinaryTree tree) {
@@ -45,5 +50,19 @@ public class Test {
     private static void testSearch(BinaryTree tree, int key) {
         System.out.println("Search " + key + " : " +
                 (tree.search(key) ? "Found" : "Not Found"));
+    }
+
+    // --- Added methods below ---
+
+    private static void printSum(BinaryTree tree) {
+        System.out.println("Sum of nodes   : " + tree.sum());
+    }
+
+    private static void printProduct(BinaryTree tree) {
+        System.out.println("Product of nodes: " + tree.product());
+    }
+
+    private static void printSize(BinaryTree tree) {
+        System.out.println("Size of tree    : " + tree.size());
     }
 }
